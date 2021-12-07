@@ -34,7 +34,7 @@ In this project, you take a fairly complex application used to search a movie da
 
 * [X] **In movieReducer.js, make sure that we are setting our state by default to initialState.** Otherwise your state will not have the original structure it needs to function!
 
-* [ ] **The MovieList component prints all of our movies to the screen.** Use the connect method here to map the movies state value into props. Replace our static movie variable with that prop.
+* [X] **The MovieList component prints all of our movies to the screen.** Use the connect method here to map the movies state value into props. Replace our static movie variable with that prop.
 
 * [ ] **The Movie component needs to access our list of movies to function.** Map movies to props here as well.
 
