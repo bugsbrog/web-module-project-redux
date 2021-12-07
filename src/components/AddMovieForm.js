@@ -9,7 +9,7 @@ const AddMovieForm = (props) => {
     const { push } = useHistory();
 
     const [movie, setMovie] = useState({
-        id: props.movies.length + 1,
+        id: props.movies.length,
         title: "",
         director: "",
         genre: "",
@@ -72,4 +72,10 @@ const AddMovieForm = (props) => {
     </div>);
 }
 
-export default connect(null, {addMovie})(AddMovieForm);
+const mapStateToProps = (state) => {
+    return {
+        movies: state.movies
+    }
+}
+
+export default connect(mapStateToProps, {addMovie})(AddMovieForm);

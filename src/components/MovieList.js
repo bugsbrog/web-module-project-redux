@@ -8,6 +8,7 @@ import MovieFooter from './MovieFooter';
 const MovieList = (props) => {
     // Hint: This code on line 9 makes the movies show up
     const { movies } = props;
+    console.log(props)
 
     return (
         <div className="col">
